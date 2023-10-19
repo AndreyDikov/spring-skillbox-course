@@ -1,5 +1,7 @@
 package com.dikovandrey.spring.mvc;
 
+import com.dikovandrey.spring.mvc.validation.CheckEmail;
+
 import javax.validation.constraints.*;
 import java.util.*;
 
@@ -26,8 +28,9 @@ public class Employee {
             regexp = "^[+]*[(]{0,1}[0-9]{1,4}[)]{0,1}[-\\s\\./0-9]*$")
     private String phoneNumber;
 
-    @Pattern(message = "неправильный адресс почты",
-            regexp = "^[_A-Za-z0-9-]+(\\.[_A-Za-z0-9-]+)*@[A-Za-z0-9]+(\\.[A-Za-z0-9]+)*(\\.[A-Za-z]{2,})$")
+    /*@Pattern(message = "неправильный адресс почты",
+            regexp = "^[_A-Za-z0-9-]+(\\.[_A-Za-z0-9-]+)*@[A-Za-z0-9]+(\\.[A-Za-z0-9]+)*(\\.[A-Za-z]{2,})$")*/
+    @CheckEmail
     private String email;
 
     public Employee() {
