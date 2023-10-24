@@ -12,7 +12,7 @@ public class AddMethodsAspect {
 
     @Before("aop.aspects.Pointcuts.pointcutAddBookAdvice()")
     public void beforeAddBookAdvice() {
-        System.out.println("Добавление книги в библиотеку...");
+        System.out.println("Adding a book to the library");
         System.out.println("---------------------------------------------------------------");
     }
 }

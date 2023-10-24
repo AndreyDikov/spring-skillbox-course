@@ -7,9 +7,14 @@
       <sourceFolder url="file://$MODULE_DIR$/buns/mod2/src/main/java" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/buns/mod2/src/main/resources" type="java-resource" />
       <sourceFolder url="file://$MODULE_DIR$/buns/mod3/src/main/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/buns/mod4/src/main/java" isTestSource="false" />
     </content>
     <orderEntry type="jdk" jdkName="corretto-17" jdkType="JavaSDK" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="Maven: org.springframework:spring-context:6.0.12" level="project" />
+    <orderEntry type="library" name="Maven: jakarta.validation:jakarta.validation-api:2.0.2" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-web:5.2.9.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.aspectj:aspectjweaver:1.9.9.1" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-core:6.0.12" level="project" />
   </component>
 </module>

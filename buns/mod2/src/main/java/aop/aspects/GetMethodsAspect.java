@@ -15,14 +15,14 @@ public class GetMethodsAspect {
     @Around("aop.aspects.Pointcuts.pointcutGetBookAdvice()")
     public Object aroundGetBookAdvice(ProceedingJoinPoint joinPoint)
             throws Throwable {
-        System.out.println("Попытка получить книгу...");
+        System.out.println("Trying to get a book");
         Object targetMethodResult = null;
         try {
             targetMethodResult = joinPoint.proceed();
-            System.out.println("Книга получена");
+            System.out.println("Book received");
         } catch (Throwable throwable) {
-            targetMethodResult = new Book("Неизвестная книга", "Неизвестный автор");
-            System.out.println("Данной книги нет в библиотеке");
+            targetMethodResult = new Book("Unknown book", "Unknown author");
+            System.out.println("This book is not in the library");
         }
         System.out.println("---------------------------------------------------------------");
         return targetMethodResult;

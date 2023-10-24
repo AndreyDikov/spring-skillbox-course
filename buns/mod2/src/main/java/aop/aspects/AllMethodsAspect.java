@@ -17,10 +17,9 @@ public class AllMethodsAspect {
     @Before("aop.aspects.Pointcuts.pointcutAllMethodsAdvice()")
     public void beforeAllMethodsAdvice(JoinPoint joinPoint) {
         MethodSignature signature = (MethodSignature) joinPoint.getSignature();
-        System.out.println("Работа сотрудника библиотеки...");
-        System.out.println("Работает метод: " + signature.getName()
-                + "\nВозвращаемое значение: " + signature.getReturnType()
-                + "\nАргументы: " + Arrays.toString(joinPoint.getArgs()));
+        System.out.println("Method: " + signature.getName()
+                + "\nReturn type: " + signature.getReturnType()
+                + "\nArguments: " + Arrays.toString(joinPoint.getArgs()));
         System.out.println("---------------------------------------------------------------");
     }
 }
