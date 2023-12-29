@@ -8,21 +8,23 @@
         <outputRelativeToContentRoot value="true" />
         <module name="mod5" />
         <module name="mod2 (2) (org.example)" />
-        <module name="mod4" />
         <module name="mod2 (1) (com.example)" />
         <module name="mod3 (1) (com.dikovandrey.spring.hibernate)" />
         <module name="mod8" />
         <module name="mod3 (2) (com.example)" />
         <module name="mod7" />
+        <module name="mod4 (1) (com.dikovandrey.spring.mvc)" />
         <module name="mod6" />
         <module name="mod1 (1) (com.example)" />
         <module name="mod1 (2) (org.example)" />
+        <module name="mod4 (2) (com.example)" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="mod1" target="17" />
       <module name="mod2" target="17" />
       <module name="mod3" target="1.8" />
+      <module name="mod4" target="1.5" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
@@ -32,6 +34,7 @@
       <module name="mod2" options="-parameters" />
       <module name="mod2 (1) (com.example)" options="-parameters" />
       <module name="mod3 (2) (com.example)" options="-parameters" />
+      <module name="mod4 (2) (com.example)" options="-parameters" />
       <module name="mod8" options="-parameters" />
     </option>
   </component>
